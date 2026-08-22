@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nutzungsbedingungen — Zaubermaler</title>
+<title>Nutzungsbedingungen / Terms of Use — Zaubermaler</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -15,6 +15,7 @@
     body { color: #ece6dc; background: #1b1815; }
     .box { background: #262220 !important; border-color: #3a342e !important; }
     a { color: #f0a267; }
+    .lang button { background: #262220; border-color: #3a342e; color: #a89e8f; }
   }
   h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
   h2 { font-size: 20px; margin: 34px 0 8px; }
@@ -26,11 +27,28 @@
   .stand { color: #857b6c; margin-top: 40px; font-size: 15px; }
   code {
     font: 15px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
-    background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 5px;
+    background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 5px;
   }
+
+  /* Sprachumschalter */
+  .lang { display: flex; gap: 6px; justify-content: flex-end; margin-bottom: 18px; }
+  .lang button {
+    font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+    padding: 6px 14px; border-radius: 999px;
+    background: #fffaf3; border: 1px solid #e6ddcd; color: #857b6c;
+  }
+  .lang button[aria-pressed="true"] { background: #e0975a; border-color: transparent; color: #2b2620; }
 </style>
 </head>
 <body>
+
+<div class="lang">
+  <button type="button" data-lang="de" aria-pressed="true">Deutsch</button>
+  <button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+<!-- ==================== DEUTSCH ==================== -->
+<section id="de">
 
 <h1>Nutzungsbedingungen</h1>
 <p class="sub">für die App <strong>Zaubermaler</strong></p>
@@ -150,6 +168,156 @@
 </p>
 
 <p class="stand">Stand: 22. August 2026 · Zaubermaler Version 1.4</p>
+
+</section>
+
+<!-- ==================== ENGLISH ==================== -->
+<section id="en" hidden>
+
+<h1>Terms of Use</h1>
+<p class="sub">for the app <strong>Zaubermaler</strong></p>
+
+<div class="box">
+  <strong>In short:</strong> Zaubermaler is a drawing app for children and families. The app is free;
+  a one-time “Family Pass” unlocks additional content. There is no subscription, no user account and
+  no advertising. All pictures stay on the device.
+</div>
+
+<h2>1. Provider</h2>
+<p>
+  Jan Wunderlich<br />
+  Am Falltor 14<br />
+  64390 Erzhausen<br />
+  Germany<br />
+  E-mail: <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a>
+</p>
+
+<h2>2. Scope</h2>
+<p>
+  These Terms of Use govern your use of the Zaubermaler app (“the app”) on your device. The app is
+  obtained and installed through Apple’s App&nbsp;Store or through Google&nbsp;Play. The terms of the
+  respective store additionally apply to purchase, installation and billing. Where they contain
+  mandatory rules that conflict with these terms, those rules prevail.
+</p>
+
+<h2>3. Licence</h2>
+<p>
+  You are granted a simple, non-exclusive, non-transferable right to install and use the app for
+  private, non-commercial purposes on the devices you use. The app and its content (motifs,
+  illustrations, texts, graphics) are protected by copyright.
+</p>
+<p>
+  You may not reverse-engineer, modify, reproduce, rent out or sell the app or parts of it, nor
+  commercially exploit the included motifs outside the app, except where the law expressly permits it.
+</p>
+
+<h2>4. Family Pass (one-time purchase)</h2>
+<p>
+  The app offers a one-time purchase, the “Family Pass”. It permanently unlocks additional motifs,
+  themes, companions and features. It is <strong>not</strong> a subscription; there are no recurring
+  charges.
+</p>
+<p>
+  Payment is handled exclusively by Apple or Google. The purchased pass is tied to your Apple ID or
+  Google account and can be restored on your devices. The current price is shown by the respective
+  store before you buy.
+</p>
+<p>
+  A simple arithmetic task appears before every purchase to prevent a child from triggering a
+  purchase by accident.
+</p>
+
+<h2>5. Right of withdrawal and refunds</h2>
+<p>
+  As this is digital content supplied immediately, a statutory right of withdrawal may expire early
+  if you expressly consent to that. Refunds are handled by the respective store: please contact Apple
+  or Google through their usual refund channels.
+</p>
+
+<h2>6. User content</h2>
+<p>
+  Photos you take as a template, as well as your drawings and time-lapse videos, remain in the app’s
+  local storage on the device (<code>IndexedDB</code>, <code>localStorage</code>) and are not
+  transmitted to the provider. You are responsible for the templates you use. Details on data
+  processing are set out in the Privacy Policy.
+</p>
+
+<h2>7. Suitability for children, supervision</h2>
+<p>
+  The app is intended for children and families. Purchases and the parents’ area are protected by an
+  arithmetic task. For use by children we recommend the guidance of an adult; responsibility for
+  age-appropriate use rests with the parents or guardians.
+</p>
+
+<h2>8. Availability and changes</h2>
+<p>
+  The app is maintained with care. There is no entitlement to uninterrupted availability or to
+  particular features or motifs remaining unchanged permanently. The provider may further develop the
+  app, adjust individual features and amend these Terms of Use where there is good reason. Users will
+  be informed of material changes in an appropriate manner.
+</p>
+
+<h2>9. Warranty and liability</h2>
+<p>
+  The statutory rules on liability for defects apply. The provider is liable without limitation for
+  intent and gross negligence and for injury to life, body or health. In the case of ordinary
+  negligence the provider is liable only for the breach of a material contractual obligation (an
+  obligation whose fulfilment makes the proper performance of the contract possible in the first place
+  and on whose observance you may regularly rely), and limited in amount to the foreseeable damage
+  typical for this type of contract. Any further liability is excluded. Mandatory statutory
+  provisions, in particular under the German Product Liability Act, remain unaffected.
+</p>
+
+<h2>10. Governing law</h2>
+<p>
+  The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the
+  International Sale of Goods. If you are a consumer, the mandatory consumer-protection provisions of
+  the country in which you have your habitual residence also apply, to the extent they are more
+  favourable to you.
+</p>
+<p>
+  The European Commission provides a platform for online dispute resolution. The provider is neither
+  obliged nor willing to take part in dispute-resolution proceedings before a consumer arbitration
+  body.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  If you have questions about these Terms of Use, contact us at
+  <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a>.
+</p>
+
+<p class="stand">Last updated: 22 August 2026 · Zaubermaler version 1.4</p>
+
+</section>
+
+<script>
+  // Sprachwahl: folgt zunaechst der Browsersprache, laesst sich umschalten.
+  // Ohne JavaScript stehen beide Fassungen untereinander – lesbar bleibt es so oder so.
+  (function () {
+    var sections = { de: document.getElementById('de'), en: document.getElementById('en') };
+    var buttons = document.querySelectorAll('.lang button');
+
+    function show(lang) {
+      sections.de.hidden = lang !== 'de';
+      sections.en.hidden = lang !== 'en';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+      });
+      try { localStorage.setItem('zm-nutzung-lang', lang); } catch (e) {}
+    }
+
+    var stored = null;
+    try { stored = localStorage.getItem('zm-nutzung-lang'); } catch (e) {}
+    var guess = (navigator.language || 'de').toLowerCase().indexOf('de') === 0 ? 'de' : 'en';
+    show(stored || guess);
+
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.lang); });
+    });
+  })();
+</script>
 
 </body>
 </html>
