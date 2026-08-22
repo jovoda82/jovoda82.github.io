@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Datenschutzerklärung — Zaubermaler</title>
+<title>Datenschutzerklärung / Privacy Policy — Zaubermaler</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -15,6 +15,7 @@
     body { color: #ece6dc; background: #1b1815; }
     .box { background: #262220 !important; border-color: #3a342e !important; }
     a { color: #f0a267; }
+    .lang button { background: #262220; border-color: #3a342e; color: #a89e8f; }
   }
   h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
   h2 { font-size: 20px; margin: 34px 0 8px; }
@@ -23,13 +24,31 @@
     background: #fff; border: 1px solid #e6ddcd; border-radius: 14px;
     padding: 16px 18px; margin: 20px 0;
   }
-  ul { padding-left: 20px; }
-  li { margin: 6px 0; }
-  .stand { color: #857b6c; font-size: 15px; margin-top: 40px; }
-  code { background: rgb(128 128 128 / 0.15); padding: 1px 5px; border-radius: 4px; }
+  .stand { color: #857b6c; margin-top: 40px; font-size: 15px; }
+  code {
+    font: 15px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 5px;
+  }
+
+  /* Sprachumschalter */
+  .lang { display: flex; gap: 6px; justify-content: flex-end; margin-bottom: 18px; }
+  .lang button {
+    font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+    padding: 6px 14px; border-radius: 999px;
+    background: #fffaf3; border: 1px solid #e6ddcd; color: #857b6c;
+  }
+  .lang button[aria-pressed="true"] { background: #e0975a; border-color: transparent; color: #2b2620; }
 </style>
 </head>
 <body>
+
+<div class="lang">
+  <button type="button" data-lang="de" aria-pressed="true">Deutsch</button>
+  <button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+<!-- ==================== DEUTSCH ==================== -->
+<section id="de">
 
 <h1>Datenschutzerklärung</h1>
 <p class="sub">für die App <strong>Zaubermaler</strong></p>
@@ -131,6 +150,137 @@
 </p>
 
 <p class="stand">Stand: 3. August 2026 · Zaubermaler Version 1.0</p>
+
+</section>
+
+<!-- ==================== ENGLISH ==================== -->
+<section id="en" hidden>
+
+<h1>Privacy Policy</h1>
+<p class="sub">for the app <strong>Zaubermaler</strong></p>
+
+<div class="box">
+  <strong>In short:</strong> This app collects no personal data. It has no server, no user account,
+  no advertising and no analytics tools. All pictures stay on the device.
+</div>
+
+<h2>1. Controller</h2>
+<p>
+  Jan Wunderlich<br />
+  Am Falltor 14<br />
+  64390 Erzhausen<br />
+  Germany<br />
+  E-mail: <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a>
+</p>
+
+<h2>2. What data we process</h2>
+<p>
+  <strong>None.</strong> The provider of this app collects, stores and receives no personal data
+  whatsoever. There is no registration, no user account, no device identifier and no log files on
+  the provider’s side.
+</p>
+
+<h2>3. Camera</h2>
+<p>
+  The app needs access to the camera in order to show the camera image on the screen. This image is
+  processed exclusively on the device and is <strong>not stored</strong> — unless you expressly take
+  a photo of your finished drawing. Even then, the photo remains in the device’s local storage.
+</p>
+
+<h2>4. Photos and drawings</h2>
+<p>
+  Selected photos, generated templates, saved artworks and time-lapse videos are held in the app’s
+  local storage (<code>IndexedDB</code> and <code>localStorage</code>). They are never transmitted.
+  When you uninstall the app, they are removed with it.
+</p>
+<p>
+  If you expressly save an artwork to your device’s photo library, the file leaves the app’s storage
+  and is then subject to your operating system’s settings — for example a cloud backup you have set
+  up. The provider of this app has no influence over that.
+</p>
+
+<h2>5. One-time purchase “Family Pass”</h2>
+<p>
+  The app offers a one-time purchase. No subscription, no recurring payment.
+</p>
+<p>
+  Payment is handled exclusively through Apple’s App&nbsp;Store or Google&nbsp;Play. In doing so, a
+  network connection exists <strong>directly between your device and the respective store</strong>;
+  the privacy terms of Apple or Google apply. The provider of this app receives neither your name nor
+  your payment details nor any identifier.
+</p>
+<p>
+  The purchased pass is tied to your Apple ID or your Google account. The app merely notes locally
+  that it has been unlocked; this note contains no proof of purchase and does not leave the device.
+</p>
+
+<h2>6. Network connections</h2>
+<p>
+  Apart from the purchase process and restoring a purchase, the app makes <strong>no network
+  connection</strong>. It loads no content, embeds no fonts, maps or libraries from third-party
+  servers, and contains no advertising, analytics or crash-reporting libraries.
+</p>
+
+<h2>7. Children</h2>
+<p>
+  This app is expressly aimed at children and families. No data is collected from children — neither
+  with nor without consent. Consent under Art.&nbsp;8 GDPR is therefore not required, because no
+  processing of personal data takes place.
+</p>
+<p>
+  Before every purchase and before the parents’ area there is an arithmetic task that younger children
+  cannot solve. The app contains no links to external websites, no social networks and no
+  communication features with other users.
+</p>
+
+<h2>8. Your rights</h2>
+<p>
+  As no personal data is processed, rights to access, rectification, erasure and objection against
+  the provider are effectively without object. You can remove all locally stored content yourself at
+  any time by deleting individual works in the app or by uninstalling the app.
+</p>
+<p>
+  For your purchase data, please contact Apple or Google. You also have the right to lodge a complaint
+  with a data-protection supervisory authority.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  If you have questions about data protection, you can reach us at
+  <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a>.
+</p>
+
+<p class="stand">Last updated: 3 August 2026 · Zaubermaler version 1.0</p>
+
+</section>
+
+<script>
+  // Sprachwahl: folgt zunaechst der Browsersprache, laesst sich umschalten.
+  // Ohne JavaScript stehen beide Fassungen untereinander – lesbar bleibt es so oder so.
+  (function () {
+    var sections = { de: document.getElementById('de'), en: document.getElementById('en') };
+    var buttons = document.querySelectorAll('.lang button');
+
+    function show(lang) {
+      sections.de.hidden = lang !== 'de';
+      sections.en.hidden = lang !== 'en';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+      });
+      try { localStorage.setItem('zm-datenschutz-lang', lang); } catch (e) {}
+    }
+
+    var stored = null;
+    try { stored = localStorage.getItem('zm-datenschutz-lang'); } catch (e) {}
+    var guess = (navigator.language || 'de').toLowerCase().indexOf('de') === 0 ? 'de' : 'en';
+    show(stored || guess);
+
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.lang); });
+    });
+  })();
+</script>
 
 </body>
 </html>
