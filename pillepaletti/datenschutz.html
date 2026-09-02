@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Datenschutzerklärung | PillePaletti</title>
+  <meta name="description" content="Datenschutzerklärung der App PillePaletti auf Deutsch und Englisch.">
+  <style>
+    :root { --bg:#f5f6f1; --card:#fffefa; --text:#15231d; --muted:#5d7068; --green:#16765a; --soft:#e4f3eb; --line:#cbded5; --shadow:0 16px 45px rgba(23,70,52,.10); }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 28px)); margin:28px auto; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); overflow:hidden; }
+    header { padding:28px 30px 22px; background:linear-gradient(135deg,var(--soft),var(--card)); border-bottom:1px solid var(--line); }
+    .brand { display:flex; gap:12px; align-items:center; color:var(--green); font-weight:800; }
+    .mark { display:grid; place-items:center; width:42px; height:42px; border:2px solid var(--green); border-radius:14px; background:var(--card); font-size:14px; }
+    h1 { margin:20px 0 4px; font-size:clamp(1.8rem,7vw,2.55rem); line-height:1.12; letter-spacing:-.035em; }
+    .subtitle,.updated { color:var(--muted); margin:4px 0; }
+    .toolbar { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; margin-top:20px; }
+    nav,.languages { display:flex; flex-wrap:wrap; gap:8px; }
+    a,button { color:var(--green); }
+    .pill { border:1px solid var(--line); border-radius:999px; background:var(--card); padding:8px 13px; font:inherit; font-size:.9rem; font-weight:700; text-decoration:none; cursor:pointer; }
+    .pill[aria-pressed="true"] { color:white; background:var(--green); border-color:var(--green); }
+    article { padding:12px 30px 32px; }
+    h2 { margin:30px 0 8px; font-size:1.25rem; line-height:1.3; }
+    p,ul { margin:8px 0 14px; }
+    li + li { margin-top:6px; }
+    .notice { margin:20px 0; padding:16px 18px; background:var(--soft); border-left:4px solid var(--green); border-radius:12px; }
+    footer { margin:18px 4px 32px; color:var(--muted); font-size:.88rem; text-align:center; }
+    :focus-visible { outline:3px solid #ef9d2f; outline-offset:3px; }
+    [hidden] { display:none !important; }
+    @media (max-width:540px) { main{width:min(100% - 16px,760px);margin:8px auto} .card{border-radius:18px} header,article{padding-left:20px;padding-right:20px} body{font-size:16px} }
+    @media (prefers-color-scheme:dark) { :root{--bg:#0e1512;--card:#17211d;--text:#f3f7f5;--muted:#b7c8c0;--green:#71d7ad;--soft:#19392c;--line:#355a4a;--shadow:none} }
+  </style>
+</head>
+<body>
+<main>
+  <section class="card">
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true">PP</span><span>PillePaletti</span></div>
+      <h1 data-de>Datenschutzerklärung</h1><h1 data-en hidden>Privacy policy</h1>
+      <p class="subtitle" data-de>Erinnern. Einnehmen. Alles Paletti.</p><p class="subtitle" data-en hidden>Remind. Take. All sorted.</p>
+      <p class="updated" data-de>Stand: 2. September 2026, Version 1.0</p><p class="updated" data-en hidden>Effective: 2 September 2026, version 1.0</p>
+      <div class="toolbar">
+        <nav aria-label="Rechtliche Seiten"><a class="pill" href="datenschutz.html">Datenschutz</a><a class="pill" href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
+        <div class="languages" aria-label="Sprache"><button class="pill" id="de" aria-pressed="true" type="button">DE</button><button class="pill" id="en" aria-pressed="false" type="button">EN</button></div>
+      </div>
+    </header>
+
+    <article data-de>
+      <div class="notice"><strong>Kurz gesagt:</strong> PillePaletti speichert deine Medikamentenangaben und Einnahmestände auf deinem Gerät. Der Anbieter erhält diese Angaben nicht. Die aktuelle Version nutzt keine Benutzerkonten, Werbung, Analysewerkzeuge oder Cloud-Synchronisierung.</div>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>Verantwortlich für PillePaletti ist:</p>
+      <p>Jan Wunderlich<br>Am Falltor 14<br>64390 Erzhausen<br>Deutschland<br>E-Mail: <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a></p>
+
+      <h2>2. Welche Daten die App verarbeitet</h2>
+      <p>Du kannst gesundheitsbezogene Angaben eingeben. Dazu gehören insbesondere:</p>
+      <ul>
+        <li>Name und Dosierung eines Medikaments</li>
+        <li>Einnahmezeiten, Rhythmus, Wochentage und Hinweise zu Mahlzeiten</li>
+        <li>Vorrat und Bestandsangaben</li>
+        <li>Status einzelner Einnahmen, etwa eingenommen, offen, verschoben oder ausgelassen</li>
+        <li>App-Einstellungen wie das gewählte Farbschema</li>
+      </ul>
+      <p>Die mitgelieferten Beispieleinträge sind fiktiv. Die App verarbeitet deine Eingaben lokal, damit sie den Tagesplan, Erinnerungen, Verlauf und Vorrat anzeigen kann.</p>
+
+      <h2>3. Speicherung auf dem Gerät</h2>
+      <p>Die App speichert ihre Daten im geschützten App-Bereich deines Android-Geräts. Der Schutz hängt auch von der Gerätesperre, dem Betriebssystem und deinen Geräteeinstellungen ab. Der Anbieter betreibt für die aktuelle App-Version keinen Server, an den deine Medikamentenangaben übertragen werden.</p>
+
+      <h2>4. Benachrichtigungen und Berechtigungen</h2>
+      <p>PillePaletti verwendet lokale Android-Benachrichtigungen. Dafür kann die App folgende Systemrechte anfragen oder technisch benötigen:</p>
+      <ul>
+        <li>Benachrichtigungen anzeigen</li>
+        <li>Alarme zu möglichst genauen Zeiten planen</li>
+        <li>Vibration für Erinnerungen verwenden</li>
+        <li>geplante Erinnerungen nach einem Neustart des Geräts wiederherstellen</li>
+      </ul>
+      <p>Die Erinnerungen werden auf deinem Gerät geplant. PillePaletti fordert derzeit keinen Zugriff auf Kamera, Standort, Kontakte, Mikrofon, Gesundheitskarte, Health Connect oder Apple Health an.</p>
+
+      <h2>5. Keine Weitergabe durch PillePaletti</h2>
+      <p>PillePaletti sendet deine Medikamentenangaben in der aktuellen Version nicht an den Anbieter und gibt sie nicht an Werbe-, Analyse- oder Datenhandelsdienste weiter. Installation, Updates und gegebenenfalls spätere Käufe wickelt Google Play nach eigenen Bedingungen ab. Dabei verarbeitet Google eigene Daten. Es gilt die <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Datenschutzerklärung von Google</a>.</p>
+
+      <h2>6. Rechtsgrundlage</h2>
+      <p>Die lokale Verarbeitung erfolgt, weil du die App und ihre Funktionen ausdrücklich nutzt und die Angaben selbst eingibst. Soweit deine Einträge Gesundheitsdaten darstellen, verarbeitet die App sie ausschließlich auf deinem Gerät für die von dir gewählten Zwecke. Der Anbieter erhält diese Inhalte nicht.</p>
+
+      <h2>7. Speicherdauer und Löschung</h2>
+      <p>Die lokalen Daten bleiben gespeichert, bis du die App-Daten in den Android-Einstellungen löschst oder PillePaletti deinstallierst. Eine Löschung durch den Anbieter ist nicht möglich, weil er die lokalen Inhalte nicht besitzt und nicht darauf zugreifen kann.</p>
+
+      <h2>8. Deine Rechte</h2>
+      <p>Soweit der Anbieter personenbezogene Daten von dir verarbeitet, hast du nach den gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren. Bei rein lokalen App-Daten übst du die Kontrolle direkt über dein Gerät aus.</p>
+
+      <h2>9. Kinder</h2>
+      <p>PillePaletti richtet sich nicht gezielt an Kinder. Minderjährige sollten Medikamentenpläne gemeinsam mit einer erziehungsberechtigten oder medizinisch verantwortlichen Person einrichten.</p>
+
+      <h2>10. Künftige Funktionen und Änderungen</h2>
+      <p>Cloud-Dienste, Gesundheitsplattformen, Bestellungen, Benutzerkonten und kostenpflichtige Plus-Funktionen sind in der aktuellen Version nicht aktiv. Falls eine spätere Version solche Dienste einführt, wird diese Erklärung vor ihrer Nutzung angepasst. Wesentliche Änderungen werden in der App oder im Store kenntlich gemacht.</p>
+
+      <h2>11. Kontakt</h2>
+      <p>Fragen zum Datenschutz kannst du an <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a> senden.</p>
+    </article>
+
+    <article data-en hidden lang="en">
+      <div class="notice"><strong>In short:</strong> PillePaletti stores your medication entries and dose status on your device. The provider does not receive this information. The current version has no user accounts, advertising, analytics or cloud sync.</div>
+
+      <h2>1. Controller</h2>
+      <p>The controller for PillePaletti is:</p>
+      <p>Jan Wunderlich<br>Am Falltor 14<br>64390 Erzhausen<br>Germany<br>Email: <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a></p>
+
+      <h2>2. Data processed by the app</h2>
+      <p>You can enter health-related information, including:</p>
+      <ul>
+        <li>medication name and dosage</li>
+        <li>dose times, schedule, weekdays and meal instructions</li>
+        <li>stock and quantity information</li>
+        <li>the status of each dose, such as taken, open, postponed or skipped</li>
+        <li>app settings such as the selected colour scheme</li>
+      </ul>
+      <p>The sample entries supplied with the app are fictional. The app processes your entries locally to display your daily plan, reminders, history and stock.</p>
+
+      <h2>3. Storage on your device</h2>
+      <p>The app stores its data in the protected app area of your Android device. Protection also depends on your device lock, operating system and device settings. The provider does not operate a server that receives your medication entries in the current version.</p>
+
+      <h2>4. Notifications and permissions</h2>
+      <p>PillePaletti uses local Android notifications. The app may request or technically require permission to:</p>
+      <ul>
+        <li>display notifications</li>
+        <li>schedule alarms at precise times where possible</li>
+        <li>use vibration for reminders</li>
+        <li>restore scheduled reminders after the device restarts</li>
+      </ul>
+      <p>Reminders are scheduled on your device. PillePaletti currently does not request access to your camera, location, contacts, microphone, electronic health card, Health Connect or Apple Health.</p>
+
+      <h2>5. No sharing by PillePaletti</h2>
+      <p>In the current version, PillePaletti does not send your medication entries to the provider or share them with advertising, analytics or data brokerage services. Google Play handles installation, updates and any future purchases under its own terms. Google processes its own data for these services. See the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+
+      <h2>6. Legal basis</h2>
+      <p>Local processing takes place because you expressly use the app and its functions and enter the information yourself. Where your entries constitute health data, the app processes them only on your device for the purposes you choose. The provider does not receive this content.</p>
+
+      <h2>7. Retention and deletion</h2>
+      <p>Local data remains stored until you clear the app data in Android settings or uninstall PillePaletti. The provider cannot delete local content because the provider does not possess it or have access to it.</p>
+
+      <h2>8. Your rights</h2>
+      <p>Where the provider processes your personal data, and subject to legal requirements, you may have rights of access, rectification, erasure, restriction, portability and objection. You may also lodge a complaint with a data protection authority. You control data stored only in the app directly through your device.</p>
+
+      <h2>9. Children</h2>
+      <p>PillePaletti is not specifically directed at children. Minors should set up medication schedules together with a parent, guardian or medically responsible person.</p>
+
+      <h2>10. Future functions and changes</h2>
+      <p>Cloud services, health platforms, ordering services, user accounts and paid Plus functions are not active in the current version. If a future version introduces these services, this policy will be updated before they are used. Material changes will be identified in the app or store.</p>
+
+      <h2>11. Contact</h2>
+      <p>Send privacy questions to <a href="mailto:jovoda82@gmail.com">jovoda82@gmail.com</a>.</p>
+    </article>
+  </section>
+  <footer>&copy; 2026 PillePaletti</footer>
+</main>
+<script>
+  const buttons = { de: document.querySelector('#de'), en: document.querySelector('#en') };
+  function setLanguage(language) {
+    const selected = language === 'en' ? 'en' : 'de';
+    document.documentElement.lang = selected;
+    document.querySelectorAll('[data-de]').forEach(element => { element.hidden = selected !== 'de'; });
+    document.querySelectorAll('[data-en]').forEach(element => { element.hidden = selected !== 'en'; });
+    buttons.de.setAttribute('aria-pressed', String(selected === 'de'));
+    buttons.en.setAttribute('aria-pressed', String(selected === 'en'));
+    localStorage.setItem('pillepaletti-legal-lang', selected);
+  }
+  buttons.de.addEventListener('click', () => setLanguage('de'));
+  buttons.en.addEventListener('click', () => setLanguage('en'));
+  setLanguage(localStorage.getItem('pillepaletti-legal-lang') || (navigator.language.startsWith('de') ? 'de' : 'en'));
+</script>
+</body>
+</html>
